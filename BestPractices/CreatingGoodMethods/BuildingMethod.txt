@@ -1,0 +1,89 @@
+Building a Method
+
+1. Signature
+
+Optional accessibility modifier
+-Default is private
+
+Return type
+- void if no return value
+
+Method name
+
+Parameter list
+- Empty parenthesis if no parameters
+
+Method Signature Best Practices
+
+Do:
+Naming
+	Define a meaningful name
+	Use a verb
+	Use PascalCasing
+
+Define the most restrictive
+accessibility possible
+
+Keep the number of parameters to
+a minimum
+
+Avoid:
+Naming
+	Vague terms
+	Abbreviations
+	Conjunctions
+	sInconsistent naming
+
+2. Method Body
+
+public bool PlaceOrder(Product product, int quantity)
+{
+if(product == null) throw new ArgumentNullException(nameof(product));
+if(quantity <= 0) throw new ArgumentOutOfRangeException(nameof(quantity));
+var success = false;
+var orderText= "Order from Acme, Inc"+ System.Environment.NewLine+
+		"Product: "+ product.ProductCode+ System.Environment.NewLine+
+		"Quantity: "+ quantity;
+var emailService = new EmailService();
+var confirmation = emailService.SendMessage("New Order", orderText, this.Email);
+if(confirmation.StartsWith("Message sent:"))
+{
+	success = true;
+}
+return success;
+}
+
+Method Body Best Practices
+
+Do:
+Keep methods short
+
+The first rule of functions is that they should be small. The second rule of functions is that they should be smaller than that. Functions should not be 100 lines long. Functions should hardly ever be 20 lines long.
+
+Robert Martin"Clean Code: A Handbook of Agile Software Craftsmanship"
+
+Use white space
+Use guard clauses
+Return an expected result
+Use an object to return multiple values
+Implement exception handling
+
+
+Avoid:
+void methods
+
+
+3. Return Statement
+
+public bool PlaceOrder(Product product, int quantity)
+{
+var success = false;
+...
+return success;
+}
+
+Signature defines the type of the return value
+- Return statement must return that type
+
+Use a type of void if the method does not return a value
+- The return statement can be omitted.

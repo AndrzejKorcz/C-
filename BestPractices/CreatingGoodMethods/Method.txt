@@ -1,0 +1,9 @@
+What is a Method
+
+- A code block
+
+- Contains a set of programming statements
+
+- Also called a function
+
+- Purpose: To implement the logic required for specific behavior or functionality in a class

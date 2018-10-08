@@ -1,0 +1,7 @@
+Defining a Method
+
+1. Identify the problem
+2. Define the single purpose
+3. Specify the inputs and outputs
+4. State any assumptions
+5. Consider the errors that could occur
