@@ -3,7 +3,7 @@ Building a Method
 1. Signature
 
 Optional accessibility modifier
--Default is private
+- Default is private
 
 Return type
 - void if no return value
@@ -21,11 +21,9 @@ Naming
 	Use a verb
 	Use PascalCasing
 
-Define the most restrictive
-accessibility possible
+Define the most restrictive accessibility possible
 
-Keep the number of parameters to
-a minimum
+Keep the number of parameters to a minimum
 
 Avoid:
 Naming
