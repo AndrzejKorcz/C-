@@ -14,10 +14,10 @@ What is method chaining?
 - One method overload calls another overload to prevent repeated code
 
 When is it best to use method overloading vs. method overriding?
-- Use overloadingwhen one method requires multiple signatures
-	• Such as a GetCustomer(id) to get a customer by Id and GetCustomer(name) to get the customer by name
-- Use overridingwhen replacing a method defined higher up the object hierarchy.
-	• Such as replacing the ToString() method
+- Use overloading when one method requires multiple signatures
+	â€¢ Such as a GetCustomer(id) to get a customer by Id and GetCustomer(name) to get the customer by name
+- Use overriding when replacing a method defined higher up the object hierarchy.
+	â€¢ Such as replacing the ToString() method
 
-What is an expression-bodiedmethod?
+What is an expression-bodied method?
 - A syntax shortcut for single statement methods that return a value
