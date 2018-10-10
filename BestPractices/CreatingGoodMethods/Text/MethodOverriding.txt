@@ -1,0 +1,15 @@
+Method Overriding
+
+publicstringToString()
+{ ... }
+
+publicoverridestringToString()
+{
+return this.ProductName+ " ("+this.productId+ ")";
+}
+
+Method Overriding Best Practices
+Do:
+Override ToString for each entity class
+
+Avoid:

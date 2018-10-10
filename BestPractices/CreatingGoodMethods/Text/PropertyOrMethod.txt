@@ -1,0 +1,10 @@
+Property or Method
+
+Property
+ Does it describe processing?
+ Does it produce side effects?
+
+Method
+ Does it require parameters?
+ Does it describe data?
+ Does it execute quickly?

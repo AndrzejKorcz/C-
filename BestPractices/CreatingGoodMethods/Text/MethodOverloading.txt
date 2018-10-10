@@ -1,0 +1,20 @@
+Method Overloading
+
+Method Overloading Best Practices
+Do:
+Keep the number of parameters to
+a minimum
+Keep the order of the parameters
+consistent
+Define an XML document
+comment for each overload
+Consider optional parameters
+
+Avoid:
+Confusing overloads
+Overloads that differ in purpose
+Example:
+OrderItems
+One overload gets the ordered items
+Second overload orders a set of items
+Duplicating code

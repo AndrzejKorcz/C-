@@ -1,0 +1,31 @@
+Expression-Bodied Methods
+
+public decimal CalculateSuggestedPrice(decimal markupPercent)
+{
+return this.Cost + (this.Cost * markupPercent/ 100);
+}
+public decimal CalculateSuggestedPrice(decimal markupPercent) =>
+this.Cost + (this.Cost * markupPercent/ 100);
+
+Syntax Shortcut
+
+Single statement methods
+
+That return a value
+
+No curly braces
+
+No return statement
+
+Just a =>
+
+Expression-Bodied Method Best Practices
+
+Do:
+Use it for very simple methods
+
+Avoid:
+Using it when there should be
+guard clauses
+Using it when there should be
+exception handling

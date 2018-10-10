@@ -1,0 +1,23 @@
+Method Chaining
+
+publicOperationResultPlaceOrder(Productproduct, intquantity)
+{
+returnPlaceOrder(product, quantity, null, null);
+}
+publicOperationResultPlaceOrder(Productproduct, intquantity, DateTimeOffset? deliverBy)
+{
+returnPlaceOrder(product, quantity, deliverBy, null);
+}
+publicOperationResultPlaceOrder(Productproduct, intquantity, DateTimeOffset? deliverBy, stringinstructions)
+{
+// All of the code here
+}
+
+Method Chaining Best Practices
+
+Do:
+Use to minimize repeated code in method overloads
+Consider optional parameters
+
+Avoid:
+If it adds complexity
