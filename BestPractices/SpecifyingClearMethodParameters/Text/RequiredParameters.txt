@@ -1,0 +1,47 @@
+Optional Parameters
+
+public OperationResult PlaceOrder(Product product, int quantity,
+	DateTimeOffset? deliverBy= null,
+	string instructions = "standard delivery");
+
+Specify a default value
+
+Are optional when the method is called
+
+If argument is not provided, default is used
+
+Can dramatically reduce the number of overloads
+
+
+Reduces Overloads
+public OperationResult PlaceOrder(Product product, int quantity)
+public OperationResult PlaceOrder(Product product, int quantity, DateTimeOffset? deliverBy)
+public OperationResult PlaceOrder(Product product, int quantity, DateTimeOffset? deliverBy, string instructions)
+
+Methodes overloads reduse to one:
+public OperationResult PlaceOrder(Product product, int quantity,
+DateTimeOffset? deliverBy= null,
+string instructions = "standard delivery");
+
+
+Optional parameters must be defined after required parameters
+
+When calling the method, if an argument is provided for any optional parameter, it must also provide arguments for all preceding parameters
+- Or use named arguments
+
+Optional Parameter Best Practices
+Do:
+Use optional parameters to minimize overload bloat
+
+Avoid:
+Optional parameters when the parameters are one or the other
+FindProduct
+(intid);
+FindProduct
+(string productName);
+FindProduct
+(intid=0,
+string
+productName="");
+Optional parameters if default could change and component versioning is important
+

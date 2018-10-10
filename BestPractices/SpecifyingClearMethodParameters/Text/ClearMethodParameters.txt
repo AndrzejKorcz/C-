@@ -1,0 +1,49 @@
+1. Coherent Parameter Names
+
+public OperationResult PlaceOrder(Product product, int quantity, bool includeAddress, bool sendCopy)
+{
+// Code here
+}
+
+2. Comment
+
+///<summary>
+///Sends a product order to the vendor.
+///</summary>
+///<paramname="product">Product to order.</param>
+///<paramname="quantity">Quantity of the product to order.</param>
+///<paramname="includeAddress">True to include the shipping address.</param>
+///<paramname="sendCopy">True to send a copy of the email.</param>
+///<returns>Success flag and order text</returns>
+public OperationResult PlaceOrder(Product product, int quantity, bool includeAddress, bool sendCopy)
+{
+// Code here
+}
+
+3. Limiting the Number of Parameters
+
+	7?
+	4?
+	Minimum possible parameters and no more
+	Use object type
+
+4. Logical and Consistent Parameter Order
+
+Acted upon or key to the operation
+Required for the operation
+Flags
+Optional parameters
+
+
+Method Parameter Best Practices
+Do:
+Define coherent parameter names (camelCase)
+Define an XML document comment for each parameter
+Keep the number of parameters to a minimum
+Order the parameters in a logical sequence
+Use a consistent parameter order
+
+Avoid:
+Unused parameters
+
+

@@ -1,0 +1,31 @@
+ref and out Parameters
+
+ref
+
+Argument passed "by reference"
+
+Argument variable must be initialized
+
+Parameter value can be changed in the method
+
+Changes are reflected in the calling code
+
+out
+
+Argument passed "by reference"
+
+Argument variable must be declared
+
+Parameter value must be set in the method
+
+Changes are reflected in the calling code
+
+
+refand outBest Practices
+Do:
+Use ref when the method expects an incoming value
+Use outwhen the method expects no incoming value
+
+Avoid:
+ref and out where feasible
+Return an object instead

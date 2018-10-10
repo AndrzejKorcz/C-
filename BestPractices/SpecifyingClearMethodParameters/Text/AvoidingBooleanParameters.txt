@@ -1,0 +1,26 @@
+Avoiding Boolean Parameters
+
+Define differing method names
+- PlaceOrder
+- PlaceOrderWithCopy
+
+Use enum
+public enum IncludeAddress{ Yes, No };
+public enum SendCopy{ Yes, No };
+
+var result = vendor.PlaceOrder(product, 12, true, false);
+var result = vendor.PlaceOrder(product, 12,Vendor.IncludeAddress.Yes,
+Vendor.SendCopy.No);
+
+enumParameter Best Practices
+
+Do:
+Define a clear name
+Use PascalCasing
+Use enum to represent a set of related values
+Favor enum over a set of constants
+
+Avoid:
+Boolean parameters where possible
+Consider enumtypes instead
+Using enum for lists that change often
